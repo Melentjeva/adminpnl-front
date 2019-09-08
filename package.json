@@ -14,13 +14,14 @@
     "-"
   ],
   "author": "Mary Melentieva <mary@mail.com>",
-  {
   "contributors": [
     "Roman Vorontsov <cflatminor92@gmail.com>",
     "Miroslav Sirenko <flavio@flaviocopes.com>"
   ],
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "del": "^5.1.0",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
