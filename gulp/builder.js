@@ -9,7 +9,7 @@ const concat = require('gulp-concat');
 (function () {
   function Builder () {
 
-    function buildCss () {
+    function scssCompile () { // todo params
       return src(paths.src.homePage.scss, { allowEmpty: true })
             .pipe(sass().on('error', sass.logError))
             .pipe(concat('main.css'))
@@ -20,7 +20,7 @@ const concat = require('gulp-concat');
       return console.log ('gulp ready, look packaje.json for scripts');
     }
 
-    function clean () {
+    function cleanDist () {
       return del('dist', { allowEmpty: true })
     }
 
@@ -29,13 +29,17 @@ const concat = require('gulp-concat');
     }
 
     this.scssCompile = function () {
-      buildCss();
+      scssCompile();
+    }
+
+    this.cleanDist = function () {
+      cleanDist();
     }
 
     this.watchFiles = function () {
       Watcher.watch(watch, {
         def: def,
-        buildCss: buildCss
+        scssCompile: scssCompile
       });
     }
   }

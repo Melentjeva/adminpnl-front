@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  {% block meta %}
+    <meta charset="utf-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% endblock %}
+
+  {% block title %}
+    <!-- <title>{{ title }}</title> -->
+    <title>temp</title> <!-- TODO title -->
+  {% endblock %}
+
+  {% block style %}
+    <link rel="stylesheet" href="dist/css/app.css">
+  {% endblock %}
+</head>
+
+<body>
+  <div id="app">
+    <div class="main">
+      <header class="main__header">
+        {% include 'layouts/basic/header/main.njk' %}
+      </header>
+
+      <main class="main__body">
+        {% block body %}{% endblock %}
+      </main>
+    </div>
+
+    <footer class="main__footer">
+      {% include 'layouts/basic/footer/main.njk' %}
+    </footer>
+  </div>
+
+  {% block application %}
+    <script src="dist/js/app.js"></script>
+  {% endblock %}
+</body>
+</html>

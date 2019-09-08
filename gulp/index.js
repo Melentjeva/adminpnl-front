@@ -2,7 +2,6 @@ import Builder from './builder.js';
 
 (function () {
   function Gulp () {
-
     this.def = async function () {
       await Builder.def();
     }
@@ -13,4 +12,4 @@ import Builder from './builder.js';
   }
 
   module.exports = new Gulp();
-})()
+})();

@@ -5,7 +5,6 @@ const paths = {
       js: 'app/js/main.js'
     }
   },
-
   dist: {
     homePage: {
       css: 'dist/css',
