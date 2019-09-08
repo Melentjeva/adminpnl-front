@@ -1,7 +1,7 @@
 {
-  "name": "admin",
+  "name": "admin frontend",
   "version": "1.0.0",
-  "description": "admin panel (api, front, postgre, REST, CRUD)",
+  "description": "admin panel (api, frontend, REST, CRUD)",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js -e js njk"
@@ -13,7 +13,12 @@
   "keywords": [
     "-"
   ],
-  "author": "mary.melentieva",
+  "author": "Mary Melentieva <mary@mail.com>",
+  {
+  "contributors": [
+    "Roman Vorontsov <cflatminor92@gmail.com>",
+    "Miroslav Sirenko <flavio@flaviocopes.com>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "del": "^5.1.0",
