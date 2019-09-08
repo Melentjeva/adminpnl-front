@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js -e js njk",
-    "build": "gulp build"
+    "gulp": "gulp watch",
+    "build": "gulp build",
+    "prod": "node server.js"
   },
   "repository": {
     "type": "git",
