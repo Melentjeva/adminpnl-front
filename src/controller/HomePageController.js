@@ -4,7 +4,7 @@ module.exports = function (router) {
    * @return String
    */
   router.get('/', function (request, response) {
-    response.send('hello');
+    response.render('layouts/HomePage/index.njk');
   });
 
   return router;

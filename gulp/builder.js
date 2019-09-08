@@ -42,6 +42,10 @@ const concat = require('gulp-concat');
         scssCompile: scssCompile
       });
     }
+
+    this.build = function () { // todo refactor
+      scssCompile();
+    }
   }
 
   module.exports = new Builder();

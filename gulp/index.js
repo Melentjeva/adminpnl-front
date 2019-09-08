@@ -6,6 +6,10 @@ import Builder from './builder.js';
       await Builder.def();
     }
 
+    this.build = async function () {
+      await Builder.build();
+    }
+
     this.watch = async function () {
       await Builder.watchFiles();
     }

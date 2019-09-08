@@ -1,10 +1,11 @@
 {
-  "name": "admin frontend",
+  "name": "adminfrontend",
   "version": "1.0.0",
   "description": "admin panel (api, frontend, REST, CRUD)",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js -e js njk"
+    "dev": "nodemon server.js -e js njk",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

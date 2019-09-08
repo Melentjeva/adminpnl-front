@@ -1,0 +1,13 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+
+body,
+html {
+  // font-family: $fontFamilyBase;
+  font-size: $baseFontSize;
+  // line-height: $lineHeightBase;
+  // color: $fontColorBase;
+  // background-color: $bodyBackgroundBase;
+  @include fontSmoothing();
+}

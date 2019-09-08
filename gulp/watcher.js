@@ -1,8 +1,14 @@
 (function () {
   function Watcher () {
-    this.watch = function (watcher, methods) {
+    /**
+      * @method watch
+      * @param watcher {Object}
+      * @param methods {Object}
+      * @return void
+      */
+    this.watch = function (watcher, methods) { // todo build function on change
       watcher('index.html').on('change', methods.def);
-      watcher('app/scss/**/*.scss').on('change', methods.scssCompile);
+      watcher('app/components/**/*.scss').on('change', methods.scssCompile);
     }
   }
 
