@@ -4,10 +4,13 @@
   "description": "admin panel (api, frontend, REST, CRUD)",
   "main": "server.js",
   "scripts": {
+    "build": "gulp build",
+    "start": "node server.js"
     "dev": "nodemon server.js -e js njk",
     "gulp": "gulp watch",
-    "build": "gulp build",
-    "prod": "node server.js"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "repository": {
     "type": "git",
