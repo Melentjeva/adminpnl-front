@@ -26,26 +26,26 @@ const concat = require('gulp-concat');
 
     this.def = function () {
       def();
-    }
+    };
 
     this.scssCompile = function () {
       scssCompile();
-    }
+    };
 
     this.cleanDist = function () {
       cleanDist();
-    }
+    };
 
     this.watchFiles = function () {
       Watcher.watch(watch, {
         def: def,
         scssCompile: scssCompile
       });
-    }
+    };
 
     this.build = function () { // todo refactor
       scssCompile();
-    }
+    };
   }
 
   module.exports = new Builder();

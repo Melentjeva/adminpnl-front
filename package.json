@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "build": "gulp build",
-    "start": "node server.js"
+    "start": "node server.js",
     "dev": "nodemon server.js -e js njk",
-    "gulp": "gulp watch",
+    "gulp": "gulp watch"
   },
   "engines": {
     "node": "10.x"

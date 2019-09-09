@@ -17,6 +17,6 @@ const paths = {
       // js: 'dist/js'
     }
   }
-}
+};
 
 module.exports = paths;

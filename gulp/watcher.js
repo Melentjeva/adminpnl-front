@@ -2,7 +2,7 @@
   function Watcher () {
     /**
       * @method watch
-      * @param watcher {Object}
+      * @param watcher {Function}
       * @param methods {Object}
       * @return void
       */
